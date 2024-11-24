@@ -12,14 +12,14 @@ import CardContent from '@mui/material/CardContent';
 
 //import React from 'react';
 
-function Signup() {
+function Todo() {
   return (
     <>
       
 
       {/* Page Heading */}
       <Box sx={{ textAlign: 'center', margin: '20px 0' }}>
-        <Typography variant="h4">Welcome, Let’s get you Signed-up</Typography>
+        <Typography variant="h4">Todo-app</Typography>
       </Box>
 
       {/* Centered Card */}
@@ -39,10 +39,10 @@ function Signup() {
               noValidate
               autoComplete="off"
             >
-              <TextField id="username" label="Username" variant="outlined" />
+              <TextField id="title" label="Task" variant="outlined" />
               <TextField
-                id="password"
-                label="Password"
+                id="description"
+                label="Task Info "
                 variant="outlined"
                 type="password"
               />
@@ -53,11 +53,11 @@ function Signup() {
               fullWidth
               sx={{ mt: 2 }} // Add margin-top
             >
-              Signup
+              Smash
             </Button>
           </CardContent>
           <CardActions sx={{ justifyContent: 'flex-end' }}>
-            <Button size="small">Forgot password?</Button>
+            <Button size="small">Clear All</Button>
           </CardActions>
         </Card>
       </Box>
@@ -65,4 +65,4 @@ function Signup() {
   );
 }
 
-export default Signup;
+export default Todo;
